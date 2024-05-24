@@ -17,7 +17,7 @@ from database.database import add_user, del_user, full_userbase, present_user
 
 """add time im seconds for waitingwaiting before delete 
 1min=60, 2min=60×2=120, 5min=60×5=300"""
-SECONDS = int(os.getenv("SECONDS", "10"))
+SECONDS = int(os.getenv("SECONDS", "600"))
 
 @Bot.on_message(filters.command('start') & filters.private & subscribed)
 async def start_command(client: Client, message: Message):
@@ -104,7 +104,7 @@ async def start_command(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton("⚡️ About", callback_data = "about"),
-                    InlineKeyboardButton('🍁 Donate', url='https://t.me/maheshsirop')
+                    InlineKeyboardButton('🍁 Developer', url='https://t.me/maheshsirop')
                 ]
             ]
         )
