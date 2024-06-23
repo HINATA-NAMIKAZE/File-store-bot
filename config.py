@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6993824790:AAG7x26fOH3pbfvAitIrkppe7tO66_SUuqs")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6761598912:AAHpTerRw0wBW9jJv-DO3WpGTeQeVbnLutc")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "20561711"))
@@ -19,7 +19,7 @@ APP_ID = int(os.environ.get("APP_ID", "20561711"))
 API_HASH = os.environ.get("API_HASH", "be67fa66bf79d732d799ed8fc7d54a16")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", " -1002102934554"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002182966979"))
 
 # NAMA OWNER
 OWNER = os.environ.get("OWNER", "maheshsirop")
@@ -35,8 +35,8 @@ DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://mongooo1:mongooo1@cluster
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002012824069"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002157396682"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1002208027282"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001348146919"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
@@ -53,10 +53,10 @@ except ValueError:
 FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "<b>Please Join My Channel to use this Bot!\n\n Due to Overload, Only Channel Subscribers can use this Bot!</b>")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
-CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• ʙʏ @Hanime_Boys</b>")
+CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b>• JOIN AND SUPPORT US </b>")
 
 #set True if you want to prevent users from forwarding files from bot
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "True" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
 
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
